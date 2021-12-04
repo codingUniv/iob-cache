@@ -23,7 +23,7 @@ To select a specific simulator, run:
 ```
 make sim SIMULATOR=<simulator name>
 ```
-<simulator name> can be icarus or verilog
+\<simulator name\> can be icarus or verilog
 For example:
 ```
 make sim SIMULATOR=verilator
@@ -60,7 +60,7 @@ To clean simulation generated file for all simulators, run
 make sim-clean-all
 ```
 
-To clean simulation generated file during regression testing for all simulators, run
+To clean all simulation generated file, run
 ```
 make test-sim-clean
 ```

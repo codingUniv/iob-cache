@@ -3,7 +3,8 @@
 IOb-cache is a high-performance configurable open-source Verilog cache. 
 IOb-cache supports pipeline architectures, allowing 1 request per clock cycle (read and write).
 It has both Native (pipelined) and AXI4 back-end interfaces.
-The write policy is configurable: either write-through/not-allocate or write-back/allocate. Configuration supports the number of ways, address-width, cache's word-size (front-end data with), the memory's word-size (back-end data width), the number of lines and words per line, replacement policy (if set associative), and cache-control module (allows performance measurement, cache invalidation and write-through buffer status).
+The write policy is configurable: either write-through/not-allocate or write-back/allocate. 
+Configuration supports the number of ways, address-width, cache's word-size (front-end data with), the memory's word-size (back-end data width), the number of lines and words per line, replacement policy (if set associative), and cache-control module (allows performance measurement, cache invalidation and write-through buffer status).
 
 ## Clone the repository
 

@@ -68,7 +68,7 @@ To clean simulation generated file for all simulators, run
 make sim-clean-all
 ```
 
-To clean all simulation generated file, run
+To clean all simulation generated files, run
 ```
 make test-sim-clean
 ```

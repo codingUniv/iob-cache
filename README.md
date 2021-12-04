@@ -34,7 +34,7 @@ make sim VCD=1
 ```
 In this case Icarus Verilog is used by default. If you are interested in another simulator, use SIMULATOR option to select it.
 
-For example
+For example:
 ```
 make sim SIMULATOR=verilator VCD=1
 ```
@@ -49,7 +49,14 @@ To simulate with regression testing for all simulators, run
 ```
 make test-sim
 ```
-To clean simulation generated file, run
+To visualize waveforms, run 
+```
+make sim VCD=2
+```
+In this case Icarus Verilog is selected by default. 
+If you are interested in selecting another simulator, set SIMULATOR option as explained previously.
+
+To clean simulation generated files, run
 ```
 make sim-clean
 ```

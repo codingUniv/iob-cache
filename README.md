@@ -32,8 +32,9 @@ To simulate with generating VCD file, run:
 ```
 make sim VCD=1 
 ```
-In this case Icarus Verilog is used by default. If you are interested in another simulator, use also SIMULATOR option to select it.
-  For example
+In this case Icarus Verilog is used by default. If you are interested in another simulator, use SIMULATOR option to select it.
+
+For example
 ```
 make sim SIMULATOR=verilator VCD=1
 ```

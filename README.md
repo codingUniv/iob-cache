@@ -23,7 +23,7 @@ To select a specific simulator, run:
 ```
 make sim SIMULATOR=<simulator name>
 ```
-\<simulator name\> can be icarus or verilog
+\<simulator name\> can be icarus or verilator
 For example:
 ```
 make sim SIMULATOR=verilator
@@ -33,7 +33,7 @@ To simulate with generating VCD file, run:
 make sim VCD=1 
 ```
 In this case Icarus Verilog is used by default. If you are interested in another simulator, use also SIMULATOR option to select it.
-For example
+  For example
 ```
 make sim SIMULATOR=verilator VCD=1
 ```

@@ -1,7 +1,7 @@
 CACHE_DIR:=.
 include ./config.mk
 
-.PHONY:	sim sim-test sim-clean sim-clean-all \
+.PHONY:	lint sim sim-test sim-clean sim-clean-all \
 	fpga-build fpga-build-all fpga-test fpga-clean fpga-clean-all \
 	doc-build doc-build-all doc-test doc-clean doc-clean-all \
 	test-sim test-sim-clean \
@@ -13,6 +13,12 @@ include ./config.mk
 #
 # SIMULATE
 #
+
+lint:
+	make -C $(LINT_DIR) run
+
+lint-clean:
+	make -C $(LINT_DIR) clean
 
 sim:
 	make -C $(SIM_DIR) run
@@ -103,7 +109,7 @@ test-clean: test-sim-clean test-fpga-clean test-doc-clean
 # CLEAN ALL
 # 
 
-clean-all: sim-clean-all fpga-clean-all doc-clean-all
+clean-all: lint-clean sim-clean-all fpga-clean-all doc-clean-all
 
 debug:
 	@echo(DOC_DIR)

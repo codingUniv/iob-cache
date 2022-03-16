@@ -16,6 +16,8 @@ SIM_DIR ?=$(CACHE_HW_DIR)/simulation/$(SIMULATOR)
 FPGA_DIR ?=$(shell find $(CACHE_DIR)/hardware -name $(FPGA_FAMILY))
 DOC_DIR ?=$(CACHE_DIR)/document/$(DOC)
 
+LINT_DIR:=$(CACHE_HW_DIR)/lint
+
 # submodule paths
 LIB_DIR ?=$(CACHE_DIR)/submodules/LIB
 MEM_DIR ?=$(CACHE_DIR)/submodules/MEM
